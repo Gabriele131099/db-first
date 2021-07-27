@@ -1,0 +1,18 @@
+Name: Dealership
+
+column               type                                 attributes                    index
+
+id                   BIGINT UNSIGNED                      AUTO_INCREMENT, NOT NULL      PRIMARY KEY
+Marca                VARCHAR(200)                         NOT NULL                      INDEX 
+Modello              VARCHAR(200)                         NOT NULL                      INDEX
+Prezzo               DECIMAL(7, 2)                        NOT NULL                      INDEX
+Immatricolazione     DATA                                 NOT NULL
+Chilometraggio       MEDIUMINT UNSIGNED                   NOT NULL
+Equipaggiamento      MEDIUMTEXT                           NULL
+Potenza              SMALLINT                             NOT NULL
+Carburante           VARCHAR(50)                          NOT NULL                      INDEX
+Tipo carrozzeria     VARCHAR(100)                         NOT NULL
+Numero portiere      TINYINT                              NOT NULL
+Numero sedili        TINYINT                              NULL
+Colore               VARCHAR(100)                         NOT NULL
+Descrizione          MEDIUMTEXT                           NULL
